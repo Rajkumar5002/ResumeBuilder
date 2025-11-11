@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Resume Template</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="rb-header">
+  <div class="rb-container">
+    <div class="rb-logo">ResumeBuilder</div>
+
+    <nav class="rb-nav">
+      <a href="#">Home</a>
+      <a href="template.html">Templates</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </div>
+</header>
+
+
+  <h1 class="title">Welcome to Free Resume Builder</h1>
+  <h2 class="title">Choose Your Resume Template</h2>
+
+  <div class="template-grid">
+    <div class="template-card" onclick="selectTemplate('template1')">
+      <img src="/assets/template1-preview.png.png" alt="Template 1">
+      <p>Professional Resume</p>
+    </div>
+
+    <div class="template-card" onclick="selectTemplate('template2')">
+      <img src="/assets/template2-preview.png.png" alt="Template 2">
+      <p>Modern Resume</p>
+    </div>
+  </div>
+
+
+  <footer class="rb-footer">
+  <div class="rb-container rb-foot-wrap">
+
+    <div class="rb-foot-about">
+      <h3>ResumeBuilder</h3>
+      <p>Create modern, ATS-friendly resumes in minutes.</p>
+    </div>
+
+    <div class="rb-foot-links">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Templates</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="rb-foot-social">
+      <h4>Follow Us</h4>
+      <div class="icons">
+        <span>📘</span>
+        <span>📸</span>
+        <span>🐦</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="rb-bottom">
+    © 2025 ResumeBuilder — All Rights Reserved.
+  </div>
+</footer>
+
+  <script>
+    function selectTemplate(templateName) {
+      localStorage.setItem('selectedTemplate', templateName);
+      window.location.href = 'form.html';
+    }
+  </script>
+</body>
+</html>
